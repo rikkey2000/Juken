@@ -37,5 +37,5 @@
 | POST | /users/:userId/goals | ゴールの登録 |
 | GET | /users/:userId/goals | ゴールの取得 |
 | POST | /users/:userId/todos | タスクの登録 |
-| PUT | /users/:userId/todos/:todoId | タスクの更新 |
-| DELETE | /users/:userId/todos/:todoId | タスクの削除 |
+| PUT | /goals/:goalId/todos/:todoId | タスクの更新 |
+| DELETE | /goals/:goalsId/todos/:todoId | タスクの削除 |
