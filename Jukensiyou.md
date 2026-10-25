@@ -28,15 +28,14 @@
 ### ① データベース構造
 - **User**：ターゲット日付、目標名、1日の目標勉強時間。
 - **Goal**：日付、その日の合計勉強時間。
-- **Todo**：タスクID、タスク内容、完了フラグ、提出物フラグ。
+- **Task**：タスクID、タスク内容、完了フラグ、提出物フラグ。
 
 ### ② エンドポイント
 
 | メソッド | パス | 概要 |
 | --- | --- | --- |
-| POST | /users/:userId/goals | ゴールの登録 |
-| GET | /users/:userId/goals | ゴールの取得 |
-| POST | /goals/:goalId/todos | タスクの登録 |
-| GET | /goals/:goalID/todos | タスクの取得 |
-| PUT | /goals/:goalId/todos/:todoId | タスクの更新 |
-| DELETE | /goals/:goalId/todos/:todoId | タスクの削除 |
+| POST | /users/:userID/goals | ゴールの登録 |
+| GET | /users/:userID/goals | ゴールの取得 |
+| POST | /goals/:goalId/tasks | タスクの登録 |
+| GET | /goals/:goalID/tasks | タスクの取得 |
+| PUT | /goals/:goalID/tasks/:taskID | タスクの更新 |

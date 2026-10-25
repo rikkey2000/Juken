@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    # ローカルホストの3306ポートをコンテナの3306ポートにバインド
+    ports:
+      - "3306:3306"

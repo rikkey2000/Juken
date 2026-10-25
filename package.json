@@ -1,0 +1,13 @@
+{
+  "name": "study-compass-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm.cmd --prefix server run dev",
+    "build:server": "npm.cmd --prefix server run build",
+    "build:client": "npm.cmd --prefix client run build",
+    "build": "npm.cmd run build:server && npm.cmd run build:client",
+    "start": "npm.cmd --prefix server run start"
+  }
+}
+
